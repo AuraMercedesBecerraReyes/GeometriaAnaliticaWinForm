@@ -39,6 +39,7 @@
             buttonElipse = new Button();
             buttonParabola = new Button();
             pictureBox2 = new PictureBox();
+            buttonAcercaDe = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
@@ -161,11 +162,26 @@
             pictureBox2.TabIndex = 13;
             pictureBox2.TabStop = false;
             // 
+            // buttonAcercaDe
+            // 
+            buttonAcercaDe.BackColor = Color.SteelBlue;
+            buttonAcercaDe.Font = new Font("Consolas", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonAcercaDe.ForeColor = Color.White;
+            buttonAcercaDe.Location = new Point(331, 637);
+            buttonAcercaDe.Name = "buttonAcercaDe";
+            buttonAcercaDe.Size = new Size(163, 38);
+            buttonAcercaDe.TabIndex = 14;
+            buttonAcercaDe.Text = "Acerca de ";
+            buttonAcercaDe.TextImageRelation = TextImageRelation.ImageAboveText;
+            buttonAcercaDe.UseVisualStyleBackColor = false;
+            buttonAcercaDe.Click += buttonAcercaDe_Click;
+            // 
             // formPrincipal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 718);
+            Controls.Add(buttonAcercaDe);
             Controls.Add(pictureBox2);
             Controls.Add(buttonHiperbola);
             Controls.Add(buttonElipse);
@@ -188,6 +204,7 @@
             Controls.SetChildIndex(buttonElipse, 0);
             Controls.SetChildIndex(buttonHiperbola, 0);
             Controls.SetChildIndex(pictureBox2, 0);
+            Controls.SetChildIndex(buttonAcercaDe, 0);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -205,5 +222,6 @@
         private Button buttonElipse;
         private Button buttonParabola;
         private PictureBox pictureBox2;
+        private Button buttonAcercaDe;
     }
 }

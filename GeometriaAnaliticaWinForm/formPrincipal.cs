@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-
-namespace GeometriaAnaliticaWinForm
+﻿namespace GeometriaAnaliticaWinForm
 {
     public partial class formPrincipal : FormPlantilla
     {
@@ -49,6 +41,12 @@ namespace GeometriaAnaliticaWinForm
         {
             FormHiperbola formh1 = new FormHiperbola();
             formh1.Show();
+        }
+
+        private void buttonAcercaDe_Click(object sender, EventArgs e)
+        {
+            AcercaDe formad1 = new AcercaDe();
+            formad1.Show();
         }
     }
 }
